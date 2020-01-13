@@ -11,21 +11,21 @@ import pandas as pd
 # In[3]:
 
 
-file1 = "/Users/cla/Desktop/UM Data Science/Projects/Project - 2/ETL-Project/Data/MDC_Housing_Data.csv"
+file1 = "./MDC_Housing_Data.csv"
 housing_data = pd.read_csv(file1)
 
 
 # In[4]:
 
 
-file2 = "/Users/cla/Desktop/UM Data Science/Projects/Project - 2/ETL-Project/Data/ZIP_TRACT_2019.csv"
+file2 = "./ZIP_TRACT_2019.csv"
 zip_vs_tract = pd.read_csv(file2)
 
 
 # In[5]:
 
 
-file3 = '/Users/cla/Desktop/UM Data Science/Projects/Project - 2/ETL-Project/Data/ACSST5Y2018.S1902_data_with_overlays_2020-01-11T105425.csv'
+file3 = './ACSST5Y2018.S1902_data_with_overlays_2020-01-11T105425.csv'
 income_data = pd.read_csv(file3)
 
 
