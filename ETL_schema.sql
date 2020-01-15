@@ -7,8 +7,7 @@ CREATE TABLE MDC_RE_data
     home_value varchar NOT NULL,
     rent_value varchar NOT NULL
 );
-
-    CREATE TABLE avgincome_perzip
+CREATE TABLE avgincome_perzip
     (
         zip VARCHAR PRIMARY KEY,
         avg_income VARCHAR NOT NULL
@@ -28,28 +27,11 @@ CREATE TABLE MDC_RE_data
     (
         index int UNIQUE
         PRIMARY KEY,
-    name VARCHAR, 
-    location VARCHAR,
-    city VARCHAR,
-    zipcode VARCHAR, 
-    rating VARCHAR,
-    price VARCHAR
+        name VARCHAR, 
+        location VARCHAR,
+        city VARCHAR,
+        zipcode VARCHAR, 
+        rating VARCHAR,
+        price VARCHAR
     );
 
-        CREATE TABLE Salaries
-        (
-            emp_no int NOT NULL,
-            salary int NOT NULL,
-            from_date VARCHAR NOT NULL,
-            to_date VARCHAR NOT NULL,
-            FOREIGN KEY(emp_no) REFERENCES Employees(emp_no)
-        );
-
-        CREATE TABLE Titles
-        (
-            emp_no int NOT NULL,
-            title varchar NOT NULL,
-            from_date VARCHAR NOT NULL,
-            to_date VARCHAR NOT NULL,
-            FOREIGN KEY(emp_no) REFERENCES Employees(emp_no)
-        );
